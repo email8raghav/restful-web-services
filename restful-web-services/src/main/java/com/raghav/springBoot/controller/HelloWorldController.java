@@ -13,8 +13,8 @@ public class HelloWorldController {
 		return "Hello-World SpringBoot 2.2.2 and docker 19.03.2";
 	}
 	
-	@GetMapping(path = "/helloWorld-bean")
+	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World");
+		return new HelloWorldBean("Hello World Bean ");
 	}
 }
