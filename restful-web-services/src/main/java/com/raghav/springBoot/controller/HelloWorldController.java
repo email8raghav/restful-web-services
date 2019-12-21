@@ -8,12 +8,12 @@ import com.raghav.springBoot.model.HelloWorldBean;
 @RestController
 public class HelloWorldController {
 
-	@GetMapping(path = "/hello")
+	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
 		return "Hello-World SpringBoot 2.2.2 and docker 19.03.2";
 	}
 	
-	@GetMapping(path = "/hello-bean")
+	@GetMapping(path = "/helloWorld-bean")
 	public HelloWorldBean helloWorldBean() {
 		return new HelloWorldBean("Hello World");
 	}
